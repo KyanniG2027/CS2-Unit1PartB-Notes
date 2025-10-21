@@ -88,6 +88,43 @@ public class Main {
       String lastWord = message.substring(8);
       System.out.println(lastWord);
 
+      // .indexOf() 
+      // the first index of the string your looking for 
+      String message1= "this is cool";
+      String message2= "this is not cool";
+
+      int indexOfNot1 = message1.indexOf("not");
+      int indexOfNot2 = message2.indexOf ("not");
+
+      System.out.println("Index of not in message1 :" + indexOfNot1); //-1
+      System.out.println("Index of not in message 2:" + indexOfNot2); //8
+
+      // .equals() allows you to compare the contents of two Strings object
+      // it checks EVERY CHARACTER in both, then returns a BOOLEAN answer 
+      boolean areTheyEqual = message1.equals(message2); 
+      System.out.println("does m1 equal m2? " + areTheyEqual);
+      //order doesnt matter here 
+      areTheyEqual = message2.equals(message1);
+      System.out.println(areTheyEqual);
+
+      //you can comapre string variables to a String LITERAL 
+      areTheyEqual = message1.equals("this is cool");
+      System.out.println(areTheyEqual); //true 
+
+      //.compareTo comapres two Strings, character by charcter 
+      //returns an INT representing alphabetical order 
+      System.out.println(message1.compareTo("Z")); //-6
+      System.out.println(message1.compareTo("t")); //-32
+      System.out.println(message1.compareTo("A")); //19
+      //negative numbers mean the OTHER string comes AFTER
+      //the oringinal/calling string, message1 
+      //positive numbers mean the OTHER strong comes BEFORE
+      //"T" is 19 positions away from "A"
+   
+
+
+
+   
    }
 
 
